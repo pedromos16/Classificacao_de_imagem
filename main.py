@@ -62,7 +62,9 @@ plt.imshow(img, cmap=plt.cm.binary)
 
 prediction = model.predict(np.array([img])/255)
 index = np.argmax(prediction)
-print(f'Pedriction is {class_names[index]}')
+print(f'A imagem é um {class_names[index]}')
+
+#print(f'Pedriction is {class_names[index]}')
 
 plt.show()
 
